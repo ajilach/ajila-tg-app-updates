@@ -1,0 +1,49 @@
+name: Check manifests
+
+# Every push to main (including the manifest commits that the apps' release jobs
+# push directly) and every pull request checks the shell scripts, runs their
+# tests, and checks that each <app-id>/latest.json still has the exact shape the
+# installed apps expect (scripts/check-manifests.sh). A release job's push is not
+# blocked by this; a bad manifest fails the run on main right after it lands.
+"on":
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Least privilege: the checks only read the repository.
+permissions:
+  contents: read
+
+# A newer push to a pull request replaces its running check. A run on main is
+# never cancelled mid-way; if commits land faster than runs finish, GitHub keeps
+# only the newest queued run, which checks every manifest on the newest main.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    name: Check scripts and manifests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check shell syntax
+        run: |
+          for script in scripts/*.sh tests/*.sh; do
+            bash -n "$script"
+          done
+
+      - name: Test the publisher
+        run: tests/publish-update-manifest.test.sh
+
+      - name: Test the manifest check
+        run: tests/check-manifests.test.sh
+
+      - name: Check manifests
+        run: scripts/check-manifests.sh
