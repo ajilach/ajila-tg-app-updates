@@ -17,6 +17,7 @@ that keep them valid. No app code, no release assets.
 | AEM Slingshot | `aem-slingshot` | [`ajilach/ajila-tg-dockerized-aem`](https://github.com/ajilach/ajila-tg-dockerized-aem) | [`aem-slingshot/latest.json`](https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/aem-slingshot/latest.json) |
 | AEM Translation Editor | `aem-translation-editor` | [`ajilach/ajila-aem-translation-tool`](https://github.com/ajilach/ajila-aem-translation-tool) | [`aem-translation-editor/latest.json`](https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/aem-translation-editor/latest.json) |
 | AEM Bumblebee | `aem-bumblebee` | [`ajilach/ajila-tg-aem-forms-editor`](https://github.com/ajilach/ajila-tg-aem-forms-editor) | *(unreleased)* |
+| RunningMan | `runningman` | [`L-K-M/RunningMan`](https://github.com/L-K-M/RunningMan) | *(unreleased)* |
 
 Apps fetch `https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/<app-id>/latest.json`.
 

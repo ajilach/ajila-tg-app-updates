@@ -33,6 +33,7 @@ save-aem-form           ajilach/ajila-forms-tg-save-form
 aem-slingshot           ajilach/ajila-tg-dockerized-aem
 aem-translation-editor  ajilach/ajila-aem-translation-tool
 aem-bumblebee           ajilach/ajila-tg-aem-forms-editor  unreleased
+runningman              L-K-M/RunningMan                   unreleased
 zmettag                 ajilach/Zmettag
 '
 
