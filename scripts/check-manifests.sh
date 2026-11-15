@@ -35,7 +35,7 @@ aem-translation-editor  ajilach/ajila-aem-translation-tool
 aem-bumblebee           ajilach/ajila-tg-aem-forms-editor  unreleased
 runningman              L-K-M/RunningMan                   unreleased
 zmettag                 ajilach/Zmettag
-prof-ajila              ajilach/prof-ajila                 unreleased
+prof-ajila              ajilach/prof-ajila
 '
 
 KEYS='["tag_name","name","html_url","published_at","draft","prerelease"]'

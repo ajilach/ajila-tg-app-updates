@@ -15,7 +15,7 @@ that keep them valid. No app code, no release assets.
 |---|---|---|---|
 | Save AEM Form | `save-aem-form` | [`ajilach/ajila-forms-tg-save-form`](https://github.com/ajilach/ajila-forms-tg-save-form) | [`save-aem-form/latest.json`](https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/save-aem-form/latest.json) |
 | AEM Slingshot | `aem-slingshot` | [`ajilach/ajila-tg-dockerized-aem`](https://github.com/ajilach/ajila-tg-dockerized-aem) | [`aem-slingshot/latest.json`](https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/aem-slingshot/latest.json) |
-| Prof. A. Jila | `prof-ajila` | [`ajilach/prof-ajila`](https://github.com/ajilach/prof-ajila) | `prof-ajila/latest.json` (created by its first stable release with update publishing) |
+| Prof. A. Jila | `prof-ajila` | [`ajilach/prof-ajila`](https://github.com/ajilach/prof-ajila) | [`prof-ajila/latest.json`](https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/prof-ajila/latest.json) |
 | AEM Translation Editor | `aem-translation-editor` | [`ajilach/ajila-aem-translation-tool`](https://github.com/ajilach/ajila-aem-translation-tool) | [`aem-translation-editor/latest.json`](https://raw.githubusercontent.com/ajilach/ajila-tg-app-updates/main/aem-translation-editor/latest.json) |
 | AEM Bumblebee | `aem-bumblebee` | [`ajilach/ajila-tg-aem-forms-editor`](https://github.com/ajilach/ajila-tg-aem-forms-editor) | *(unreleased)* |
 | RunningMan | `runningman` | [`L-K-M/RunningMan`](https://github.com/L-K-M/RunningMan) | *(unreleased)* |
